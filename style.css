@@ -1,53 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
   width: 100%;
-  margin: 0; background:#5d7a55;  
+  background:#5d7a55;  
   font-family: 'DotGothic16', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   font-size: 48px;
 }
   
-.shopcontainer {
- border-radius: 25px;
-  border: 2px solid #fff;
-  padding: 20px;
+header {
+  position: relative;
+  margin: 10px;
+  border-radius: 25px;
+  padding: 15px;
   width: 1000px;
-  height: 15px;
-  opacity: .6;
-  background-color: #fff;
+  background-color: #efefef95;
   font-style: DotGothic16;
-  align-items: center;
-  justify-content: center;
-  display: flex;
 }
 
-
-.logospace {
-    height: 200px;
-    display: flex;
-    align-items: bottom center;
-    justify-content: center;
+.left, .center {
+  position: absolute;
+  display: inline;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
-.buttonstyle {
-  background-color: #E3D251;
+.left {
+  left: 15px;
+}
+
+.center {
+  left: 50%;
+  translate: -50%;
+}
+
+button {
+  background-color: #e3deac;
   border: none;
-  color: white;
-  padding: 8px 8px;
+  color: black;
+  padding: 5px 10px;
   text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 22px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 25px;
   font-style: DotGothic16;
-  position: relative;
-  float: left;
 }
 
-.button1:hover {
+button:hover {
   background-color: #E8E4C5;
-  color: white;
 }
