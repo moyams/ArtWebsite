@@ -4,25 +4,15 @@
 }
 
 html {
+  position: absolute;
   height: 100%;
   width: 100%;
   background:#5d7a55;  
   font-family: 'DotGothic16', sans-serif;
-}
-
-html:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
   background-image: url('assets/wallpaper.png');
   background-repeat: repeat;
   background-size: 60%;
-  z-index: -1;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +23,10 @@ body {
 
 main {
   padding-top: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -45,8 +39,10 @@ header {
   border-radius: 25px;
   padding: 15px;
   width: 1000px;
+  max-width: 90%;
   background-color: #efefef95;
   font-style: DotGothic16;
+  z-index: 1;
 }
 
 .left, .center {
@@ -83,8 +79,46 @@ button:hover {
   background-color: #E8E4C5;
 }
 
-.border {
-  border-image: url('assets/Frame.png') ;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
 
-  
-} 
+.grid .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-style: DotGothic16;
+  color: #fff;
+  border-radius: 25px;
+  margin: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+}
+
+.item .image, .item .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item .image {
+  transform: scale(0.8)
+}
+
+.copyright {
+  font-style: DotGothic16;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
