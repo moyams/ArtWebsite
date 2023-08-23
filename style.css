@@ -82,3 +82,9 @@ button {
 button:hover {
   background-color: #E8E4C5;
 }
+
+.border {
+  border-image: url('assets/Frame.png') ;
+
+  
+} 
