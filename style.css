@@ -53,7 +53,7 @@ header {
 }
 
 .left {
-  left: 5px;
+  left: .01px;
 }
 
 .center {
@@ -69,7 +69,7 @@ button {
   font-size: 22px;
   transition-duration: 0.4s;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 35px;
   font-style: DotGothic16;
   padding: 18px;
   --ggs: 0.9;
@@ -121,6 +121,7 @@ button:hover {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px;
+  z-index: 6;
 }
 
 .dropdown {
@@ -134,6 +135,8 @@ button:hover {
   background-color: #E8E4C5;
   min-width: 160px;
   z-index: 1;
+  border-radius: 25px;
+
 }
 
 .dropdown-content a {
@@ -147,5 +150,23 @@ button:hover {
 {display: block;}
 
 .artist {
-  height: 10px;
+ width: 300px; 
+ height: 400px;
+ position: relative;
+}
+
+img {
+  max-width: 100%
+}
+
+.textbox {
+  position: fixed;
+  padding: 15PX;
+    width: 150px;
+    left: 200px;
+    font-size: 16px;
+    margin-right: auto;
+    background-color:#efefef95 ;
+    border-radius: 15px;
+
 }
