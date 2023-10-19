@@ -49,5 +49,3 @@
     gallery.appendChild(imgContainer);
   });
 })();
-
-
