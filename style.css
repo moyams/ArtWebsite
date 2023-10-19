@@ -215,6 +215,7 @@ img {
 
 .textbox {
   position: fixed;
+<<<<<<< HEAD
   padding: 15px;
   width: 150px;
   left: 200px;
@@ -222,4 +223,14 @@ img {
   margin-right: auto;
   background-color: #efefef95;
   border-radius: 15px;
+=======
+  padding: 15PX;
+    width: 190px;
+    left: 160px;
+    font-size: 16px;
+    margin-right: auto;
+    background-color:#efefef95 ;
+    border-radius: 15px;
+
+>>>>>>> upstream/main
 }
