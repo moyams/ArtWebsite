@@ -88,8 +88,8 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   max-width: 1000px;
-  grid-gap: 40px 5%;
-  padding: 40px 40px;
+  grid-gap: min(40px, 3vw) 5%;
+  padding: 5% 0;
 }
 
 .grid .item {
@@ -161,6 +161,13 @@ button:hover {
 }
 .frame {
   transform: scale(1.22);
+}
+
+.logo {
+  width: 90%;
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .copyright {
