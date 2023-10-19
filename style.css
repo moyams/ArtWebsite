@@ -7,9 +7,9 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  background:#5d7a55;  
-  font-family: 'DotGothic16', sans-serif;
-  background-image: url('assets/wallpaper.png');
+  background: #5d7a55;
+  font-family: "DotGothic16", sans-serif;
+  background-image: url("assets/wallpaper.png");
   background-repeat: repeat;
   background-size: 60%;
   overflow-x: hidden;
@@ -32,7 +32,7 @@ main {
 h1 {
   font-size: 48px;
 }
-  
+
 header {
   position: fixed;
   margin: 10px;
@@ -46,15 +46,16 @@ header {
   display: flex;
 }
 
-.left, .center {
+.left,
+.center {
   position: absolute;
   display: inline;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .left {
-  left: .01px;
+  left: 0.01px;
 }
 
 .center {
@@ -77,7 +78,7 @@ button {
 }
 
 button:hover {
-  background-color: #E8E4C5;
+  background-color: #e8e4c5;
 }
 
 .grid {
@@ -105,7 +106,8 @@ button:hover {
   aspect-ratio: 4/5;
 }
 
-.item .image, .item .frame {
+.item .image,
+.item .frame {
   position: absolute;
   top: 0;
   left: 0;
@@ -114,7 +116,7 @@ button:hover {
 }
 
 .item .image {
-  transform: scale(0.8)
+  transform: scale(0.8);
 }
 
 .copyright {
@@ -133,11 +135,10 @@ button:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #E8E4C5;
+  background-color: #e8e4c5;
   min-width: 160px;
   z-index: 1;
   border-radius: 25px;
-
 }
 
 .dropdown-content a {
@@ -147,29 +148,29 @@ button:hover {
   display: block;
 }
 
-.dropdown:hover .dropdown-content 
-{display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .artist {
- width: 300px; 
- height: 400px;
- position: relative;
+  width: 300px;
+  height: 400px;
+  position: relative;
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 .textbox {
   position: fixed;
-  padding: 15PX;
-    width: 150px;
-    left: 200px;
-    font-size: 16px;
-    margin-right: auto;
-    background-color:#efefef95 ;
-    border-radius: 15px;
-
+  padding: 15px;
+  width: 150px;
+  left: 200px;
+  font-size: 16px;
+  margin-right: auto;
+  background-color: #efefef95;
+  border-radius: 15px;
 }
 
 .container {
@@ -188,7 +189,7 @@ img {
   width: 100%;
   max-width: 100%;
   max-height: 100%;
-  transition: .5s ease-in-out transform;
+  transition: 0.5s ease-in-out transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
