@@ -86,8 +86,8 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   max-width: 1000px;
-  grid-gap: 40px;
-  padding-top: 40px;
+  grid-gap: 40px 5%;
+  padding: 40px 40px;
 }
 
 .grid .item {
@@ -104,10 +104,10 @@ button:hover {
   position: relative;
   width: 100%;
   aspect-ratio: 4/5;
-
   perspective: 1000px;
 }
 
+/* Flip effect */
 .grid .item .flip-card-inner {
   position: relative;
   width: 100%;
@@ -133,29 +133,32 @@ button:hover {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 .flip-card-back {
-  background-color: #222222;
+  background-color: #4f663d;
+  border-radius: 10px;
   color: #fff;
   transform: rotateY(180deg);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
-.item .image,
-.item .frame {
+.description {
+  padding: 20px;
+}
+
+/* Image and frame overlap */
+.image,
+.frame {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
-.item .frame {
+.frame {
   transform: scale(1.22);
-}
-
-.item .image {
-  /* transform: scale(1); */
 }
 
 .copyright {
