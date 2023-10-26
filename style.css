@@ -7,9 +7,9 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  background:#5d7a55;  
-  font-family: 'DotGothic16', sans-serif;
-  background-image: url('assets/wallpaper.png');
+  background: #5d7a55;
+  font-family: "DotGothic16", sans-serif;
+  background-image: url("assets/wallpaper.png");
   background-repeat: repeat;
   background-size: 60%;
   overflow-x: hidden;
@@ -32,10 +32,10 @@ main {
 h1 {
   font-size: 48px;
 }
-  
+
 header {
   position: fixed;
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 25px;
   padding: 15px;
   width: 1000px;
@@ -44,17 +44,20 @@ header {
   font-style: DotGothic16;
   z-index: 1;
   display: flex;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
-.left, .center {
+.left,
+.center {
   position: absolute;
   display: inline;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .left {
-  left: .01px;
+  left: 0.01px;
 }
 
 .center {
@@ -77,13 +80,16 @@ button {
 }
 
 button:hover {
-  background-color: #E8E4C5;
+  background-color: #e8e4c5;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  max-width: 1000px;
+  grid-gap: min(40px, 3vw) 5%;
+  padding: 5% 0;
 }
 
 .grid .item {
@@ -97,24 +103,71 @@ button:hover {
   margin: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
-}
-
-.item {
   position: relative;
   width: 100%;
   aspect-ratio: 4/5;
+  perspective: 1000px;
 }
 
-.item .image, .item .frame {
+/* Flip effect */
+.grid .item .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.grid .item:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-back {
+  background-color: #4f663d;
+  border-radius: 10px;
+  color: #fff;
+  transform: rotateY(180deg);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  padding: 20px;
+}
+
+/* Image and frame overlap */
+.image,
+.frame {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+.frame {
+  transform: scale(1.22);
+}
 
-.item .image {
-  transform: scale(0.8)
+.logo {
+  width: 90%;
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .copyright {
@@ -133,11 +186,10 @@ button:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #E8E4C5;
+  background-color: #e8e4c5;
   min-width: 160px;
   z-index: 1;
   border-radius: 25px;
-
 }
 
 .dropdown-content a {
@@ -147,21 +199,41 @@ button:hover {
   display: block;
 }
 
-.dropdown:hover .dropdown-content 
-{display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .artist {
- width: 300px; 
- height: 400px;
- position: relative;
+  width: 300px;
+  height: 400px;
+  position: relative;
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
+.pagetext  {
+  padding: 15px;
+  width: 170px;
+  left: 220px;
+  font-size: 16px;
+  left: 100px;
+  background-color: #efefef95;
+  border-radius: 15px;
+  position: fixed;
+}
 .textbox {
   position: fixed;
+<<<<<<< HEAD
+  padding: 15px;
+  width: 150px;
+  left: 200px;
+  font-size: 16px;
+  margin-right: auto;
+  background-color: #efefef95;
+  border-radius: 15px;
+=======
   padding: 15PX;
     width: 190px;
     left: 160px;
@@ -170,47 +242,9 @@ img {
     background-color:#efefef95 ;
     border-radius: 15px;
 
+>>>>>>> upstream/main
 }
 
-.container {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-}
-
-.container img,
-.container .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  transition: .5s ease-in-out transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.container .img {
-  transform: rotateY(0deg);
-}
-
-.container .description {
-  transform: rotateY(180deg);
-  background: #e3deac;
-}
-
-.container .description .container {
-  font-family: sans-serif;
-  padding: 1rem;
-}
-
-.container:hover img {
-  transform: rotateY(180deg);
-}
-
-.container:hover .description {
-  transform: rotateY(0deg);
+a {
+  color: #283525;
 }
