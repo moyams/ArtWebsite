@@ -225,7 +225,6 @@ img {
 }
 .textbox {
   position: fixed;
-<<<<<<< HEAD
   padding: 15px;
   width: 150px;
   left: 200px;
@@ -233,56 +232,8 @@ img {
   margin-right: auto;
   background-color: #efefef95;
   border-radius: 15px;
-=======
-  padding: 15PX;
-    width: 190px;
-    left: 160px;
-    font-size: 16px;
-    margin-right: auto;
-    background-color:#efefef95 ;
-    border-radius: 15px;
-
 }
 
-.container {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-}
-
-.container img,
-.container .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  transition: .5s ease-in-out transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.container .img {
-  transform: rotateY(0deg);
-}
-
-.container .description {
-  transform: rotateY(180deg);
-  background: #e3deac;
-}
-
-.container .description .container {
-  font-family: sans-serif;
-  padding: 1rem;
-}
-
-.container:hover img {
-  transform: rotateY(180deg);
-}
-
-.container:hover .description {
-  transform: rotateY(0deg);
+a {
+  color: #283525;
 }
