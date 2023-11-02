@@ -224,10 +224,8 @@ img {
   position: fixed;
 }
 .textbox {
-  position: fixed;
   padding: 15px;
-  width: 150px;
-  left: 200px;
+  width: 50%; 
   font-size: 16px;
   margin-right: auto;
   background-color: #efefef95;
