@@ -17,7 +17,7 @@
     { src: 'halloween.jpg',
       aspectRatio: 4 / 5,
       title: 'Happy Halloween',
-      description: 'I created this design for my community project. This young dolly design was given to trick-or-treaters, for Halloween. 2023 ',
+      description: 'I created this design for a community project. This young dolly design was given to trick-or-treaters. 2023 ',
    
      
     },
@@ -58,6 +58,7 @@
   images.forEach(({ src, aspectRatio, title, description }) => {
     // Template literal - this is a bit easier to read than the other way
     const html = `
+    <div class= "container">
       <div class="item" style="aspect-ratio: ${aspectRatio}">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -71,6 +72,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     `
     gallery.insertAdjacentHTML('beforeend', html);

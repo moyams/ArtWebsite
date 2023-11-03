@@ -107,6 +107,8 @@ button:hover {
   width: 100%;
   aspect-ratio: 4/5;
   perspective: 1000px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Flip effect */
@@ -148,9 +150,13 @@ button:hover {
 
 .description {
   padding: 20px;
+  flex: 1; 
+  font-size: 23px;
+  white-space: normal; 
+  word-wrap: break-word; 
 }
 
-/* Image and frame overlap */
+
 .image,
 .frame {
   position: absolute;
@@ -203,26 +209,11 @@ button:hover {
   display: block;
 }
 
-.artist {
-  width: 300px;
-  height: 400px;
-  position: relative;
-}
-
 img {
   max-width: 100%;
 }
 
-.pagetext  {
-  padding: 15px;
-  width: 170px;
-  left: 220px;
-  font-size: 16px;
-  left: 100px;
-  background-color: #efefef95;
-  border-radius: 15px;
-  position: fixed;
-}
+
 .textbox {
   padding: 15px;
   width: 50%; 
@@ -234,4 +225,46 @@ img {
 
 a {
   color: #283525;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artist {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+  margin-right: 10px; 
+  max-width: 100%; 
+  height: auto; 
+  display: block;
+}
+
+.pagetext {
+  flex: 1; 
+  padding: 15px;
+  font-size: 30px;
+  background-color: #efefef95;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .artist {
+    width: 100%; 
+    margin-right: 0; 
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
 }
