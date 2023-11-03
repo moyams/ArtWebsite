@@ -3,8 +3,8 @@
     {
       src: 'unbroken.jpg',
       aspectRatio: 4 / 5,
-      title: 'Unbroken',
-      description: 'Coming to terms with past trauma is difficult, and art is cathartic. Pain is subtle but always present.2023',
+      title: 'Rabbit\'s Blood\ ',
+      description: '2023',
     
     },
     { src: 'nograve.PNG',
@@ -14,25 +14,31 @@
    
      
     },
-    { src: 'halloween.jpg',
+    {  
+      src: 'attention.jpg',
+      aspectRatio: 4 / 5,
+      title: 'Attention',
+      description: 'My ex-boyfriend gave me this stuffed animal, so I gave it to my dog.2023',
+    
+     },  
+     { src: 'halloween.jpg',
       aspectRatio: 4 / 5,
       title: 'Happy Halloween',
       description: 'I created this design for a community project. This young dolly design was given to trick-or-treaters. 2023 ',
    
      
     },
-    {  
-      src: 'attention.PNG',
-      aspectRatio: 4 / 5,
-      title: 'Attention',
-      description: 'My ex-boyfriend gave me this stuffed animal, so I gave it to my dog.2023',
-    
-     },
     {
       src: 'melodrama.jpg',
       aspectRatio: 4 / 5,
       title: 'Melodrama',
       description: 'This piece is what melodrama by Lorde sounds like to me. Drenched in color, full of sadness. 2022',
+    },  
+    {
+      src: 'TULIP.JPG',
+      aspectRatio: 4/5,
+      title: 'Chop\'s\ Bed',
+      description: 'Chop is my muse. 2023 ',
     },
     { 
       src: 'creep.jpg',
@@ -40,12 +46,7 @@
       title: 'Creep',
       description: 'Meant to convey the physical manifestation of uncomfort. 2022',
       },
-    {
-      src: 'TULIP.JPG',
-      aspectRatio: 4/5,
-      title: 'Chop\'s\ Bed',
-      description: 'Chop is my muse. 2023 ',
-    },
+  
     {
       src: 'chop.jpg',
       aspectRatio: 4 / 5,
