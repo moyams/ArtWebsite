@@ -1,58 +1,35 @@
 (() => {
   const images = [
     {
-      src: 'unbroken.jpg',
+      src: 'No_Grave.jpg',
       aspectRatio: 4 / 5,
-      title: 'Rabbit\'s Blood\ ',
+      title: 'No Grave',
       description: '2023',
     
     },
-    { src: 'nograve.PNG',
-      aspectRatio: 4 / 5,
-      title: 'No grave',
-      description: 'Work song by Hozier served as an inspiration for this piece. Meant to convey the light self-love illuminates. 2023 ',
-   
-     
-    },
+
     {  
-      src: 'attention.jpg',
-      aspectRatio: 4 / 5,
-      title: 'Attention',
-      description: 'My ex-boyfriend gave me this stuffed animal, so I gave it to my dog.2023',
+      src: 'RasPberryJam.jpg',
+      aspectRatio: 6 / 4,
+      title: 'Raspberry Jam',
+      description: 'I am the product of things around me. 2023',
     
      },  
-     { src: 'halloween.jpg',
+     { src: 'YellowWallpaper.jpg',
       aspectRatio: 4 / 5,
-      title: 'Happy Halloween',
-      description: 'I created this design for a community project. This young dolly design was given to trick-or-treaters. 2023 ',
+      title: 'Yellow WallPaper',
+      description: 'A woman with her yellow wallpaper. How original? 2023 ',
    
      
     },
     {
-      src: 'melodrama.jpg',
+      src: 'DeliverUS.jpg',
       aspectRatio: 4 / 5,
-      title: 'Melodrama',
-      description: 'This piece is what melodrama by Lorde sounds like to me. Drenched in color, full of sadness. 2022',
+      title: 'Deliver Us',
+      description: 'Drenched in darkness searching for light. 2023',
     },  
-    {
-      src: 'TULIP.JPG',
-      aspectRatio: 4/5,
-      title: 'Chop\'s\ Bed',
-      description: 'Chop is my muse. 2023 ',
-    },
-    { 
-      src: 'creep.jpg',
-      aspectRatio: 4 / 5,
-      title: 'Creep',
-      description: 'Meant to convey the physical manifestation of uncomfort. 2022',
-      },
-  
-    {
-      src: 'chop.jpg',
-      aspectRatio: 4 / 5,
-      title: 'Chop',
-      description: 'My muse (Chop) with a cowboy hat. 2022',
-      },
+
+    
   ]
   const gallery = document.querySelector('#gallery');
 
